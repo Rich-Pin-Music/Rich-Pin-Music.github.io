@@ -52,6 +52,7 @@ main #content-container {
     font-size: x-large;
     font-weight: bold;
     color: rgb(63, 60, 60);
+    height: auto;
 }
 
 main #about h2 {
@@ -88,9 +89,16 @@ footer {
     bottom: -1;
     left: 0;
     width:100%;
+    height: 100vh;
     text-align: center;
-    padding: 50px 0;
+    padding: 0 0 150px 0;
     background-color: #ede5e5;
+}
+
+footer #contact {
+    padding-top: 100px;
+    font-size: large;
+    color: rgb(63, 60, 60);
 }
 
 footer #contact h1 {
@@ -102,8 +110,12 @@ footer #contact div {
     padding-top: 20px;
 }
 
-footer #contact p {
+footer #contact i {
     font-size: x-large;
+}
+
+footer #contact span {
+    padding-left: 10px;
 }
 
 footer #contact p:nth-child(odd) {
@@ -200,6 +212,9 @@ footer #contact p:nth-child(odd) {
         width: 100%;
         height: 100%;
     }
+}
+
+@media screen and (max-width: 525px) {
     
     header {
         padding: 5px;
@@ -229,6 +244,11 @@ footer #contact p:nth-child(odd) {
         text-align: center;
     }
 
+    main #about h2 {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
     main #links {
         width: 33.33%;
         display:grid;
@@ -249,6 +269,7 @@ footer #contact p:nth-child(odd) {
         font-size: large;
         margin-top: 1px;
         width: fit-content;
+        text-align: center;
     }
 
     footer #contact h1 {
