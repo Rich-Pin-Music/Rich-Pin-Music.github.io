@@ -77,10 +77,6 @@ main #links a:hover {
     filter: drop-shadow(2px 4px 6px white);
 }
 
-main #links img:hover {
-    filter: drop-shadow(2px 4px 6px white);
-}
-
 footer {
     position:absolute;
     bottom: -1;
