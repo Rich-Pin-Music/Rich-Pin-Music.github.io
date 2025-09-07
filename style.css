@@ -21,15 +21,18 @@ body::before {
     }
 
 body {
-    font-family: "Raleway", Arial, sans-serif
+    font-family: "Raleway", Arial, sans-serif;
+    padding: 0 100px;
 }
 
 header {
-    padding: 10px 100px;
+    /* background-color: #af9099; */
+    padding: 10px 83px;
 }
 
 nav {
-    width:fit-content;
+    /* background-color: aqua; */
+    width:100%;
     opacity: 0.9;
 }
 
@@ -45,26 +48,40 @@ nav a:hover {
 
 main {
     height: 100vh;
-    padding-left: 100px;
 }
 
-main #content-container {
+main .content {
+    /* background-color: #67b7a3; */
     font-size: x-large;
     font-weight: bold;
     color: rgb(63, 60, 60);
-    height: auto;
 }
 
-main #about h2 {
-    font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Padding to even up padding in acutal image top to bottom */
+main #site-header {
+    /* background-color: rgb(207, 200, 200); */
+    padding: 12px 0 0 0;
+}
+
+main #about {
+    /* background-color: rgb(236, 231, 231); */
+}
+
+/* Padding to match space in site header image */
+main #about, main #links {
+    padding: 12px 83px;
+}
+
+main #about p {
+    /* background-color: springgreen; */
 }
 
 main #links {
-    padding-top: 50px;
+    /* background-color: white; */
 }
 
 main #links a {
+    /* background-color: rgb(227, 98, 34); */
     padding-right: 30px;
     font-size: x-large;
     font-weight: bold;
@@ -234,10 +251,10 @@ footer #contact p:nth-child(odd) {
         padding: 0;
     }
 
-    main #content-container {
+    /* main #content-container {
         width: 100%;
         font-size: large;
-    }
+    } */
 
     main #about {
         width: 100%;
