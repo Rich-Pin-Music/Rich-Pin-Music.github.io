@@ -1,0 +1,110 @@
+body::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/images/rp-selfie2-filter.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0.9;
+    }
+
+body {
+    font-family: "Raleway", Arial, sans-serif
+}
+
+header {
+    padding: 10px 100px;
+    /*background-color: antiquewhite;*/
+}
+
+nav {
+    width:fit-content;
+    opacity: 0.9;
+    /*background-color: yellowgreen;*/
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    text-decoration: none;
+    /*text-underline-offset: 7px;*/
+}
+
+nav a:hover {
+    color: #e1e1e1;
+}
+
+main {
+    height: 100vh;
+    padding-left: 100px;
+    /*background-color: aqua;*/
+}
+
+main #content {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(63, 60, 60);
+    /*background-color: white;*/
+}
+
+main #about h2 {
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main #links {
+    padding-top: 50px;
+}
+
+main #links a {
+    padding-right: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #800080;
+}
+
+main #links i {
+    padding-right: 10px;
+}
+
+main #links a:hover {
+    filter: drop-shadow(2px 4px 6px white);
+}
+
+main #links img:hover {
+    filter: drop-shadow(2px 4px 6px white);
+}
+
+footer {
+    position:absolute;
+    bottom: -1;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ede5e5;
+}
+
+footer #contact h1 {
+    color:#ce869a;
+    font-weight: bold;
+}
+
+footer #contact div {
+    padding-top: 20px;
+}
+
+footer #contact p {
+    font-size: x-large;
+}
+
+footer #contact p:nth-child(odd) {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
