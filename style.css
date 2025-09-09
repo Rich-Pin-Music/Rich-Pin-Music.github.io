@@ -5,279 +5,124 @@
 ****************************************************/
 
 body::before {
-        content: "";
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-image: url(/images/rp-selfie2-filter.png);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        z-index: -1;
-        opacity: 0.7;
-    }
-
-body {
-    font-family: "Raleway", Arial, sans-serif
-}
-
-header {
-    padding: 10px 100px;
-}
-
-nav {
-    width:fit-content;
-    opacity: 0.9;
-}
-
-nav a {
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #e1e1e1;
-}
-
-main {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    padding-left: 100px;
+    background-image: url(/images/rp-selfie2-filter.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.7;
 }
 
-main #content-container {
-    font-size: x-large;
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.w3-grid {
+    grid-template-rows: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#site-logo,
+#about,
+#links,
+#footer {
+    align-content: center;
+    width: 33.33vw;
+    text-align: center;
+    font-size: large;
+    padding: 2em 2em;
+}
+
+#about,
+#footer {
     font-weight: bold;
-    color: rgb(63, 60, 60);
-    height: auto;
 }
 
-main #about h2 {
-    font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#links {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 2em;
 }
 
-main #links {
-    padding-top: 50px;
-}
-
-main #links a {
-    padding-right: 30px;
-    font-size: x-large;
-    font-weight: bold;
+#links a {
+    margin: 0 1em;
+    font-size: xx-large;
     color: #800080;
 }
 
-main #links i {
-    padding-right: 10px;
+#links a:hover {
+    filter: drop-shadow(2px 4px 6px rgb(250, 133, 229));
 }
 
-main #links img {
-    width:25px; 
-    height:23px;
+#links img {
+    width: 1em;
+    height: 1em;
 }
 
-main #links a:hover {
-    filter: drop-shadow(2px 4px 6px white);
-}
-
-footer {
-    position:absolute;
-    bottom: -1;
-    left: 0;
-    width:100%;
-    height: 100vh;
-    text-align: center;
-    padding: 0 0 150px 0;
-    background-color: #ede5e5;
-}
-
-footer #contact {
-    padding-top: 100px;
-    font-size: large;
-    color: rgb(63, 60, 60);
-}
-
-footer #contact h1 {
-    color:#ce869a;
+#footer h3 {
     font-weight: bold;
 }
 
-footer #contact div {
-    padding-top: 20px;
-}
-
-footer #contact i {
-    font-size: x-large;
-}
-
-footer #contact span {
-    padding-left: 10px;
-}
-
-footer #contact p:nth-child(odd) {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+#footer i {
+    margin-right: 0.5em;
+    color: #800080;
 }
 
 /****************************************************
 
-    Responsive design for different screen sizes
+    Responsive for different screen sizes
 
 ****************************************************/
 
-@media screen and (max-width: 2475px) {
+@media screen and (max-width:1500px) {
 
-    main .content {
-        width: 25%;
-    }
-
-    main #about {
-        height: fit-content;
-        float: left;
-    }
-
-    main #links {
-        height: fit-content;
-        float: left;
-        padding: 1.2em 1.3em;
-    }
-
-    main #links a {
-        display: block;
-        text-decoration: none;
-        padding-bottom: 1em;
-        font-size: larger;
-    }
-
-    main #links img {
-    width:25px; 
-    height:28px;
-}
-    
-}
-
-@media screen and (max-width: 1625px) {
-
-    main .content {
-        width: fit-content;
-    }
-
-    main #about {
-        height: fit-content;
-        float:none;
-    }
-
-    main #links {
-        padding: 0 1em 0 0;
-    }
-
-    .icon-description {
-        visibility: hidden;
-    }
-
-    main #links a {
-        display: flex;
-        width: 60px;
-        float: left;
-        text-decoration: none;
-        padding: 0.5em 0.5em 0 0;
-        font-size: xx-large;
-    }
-    
-}
-
-@media screen and (max-width: 1125px) {
-
-    main #links a {
-        padding: 0.5em 0.1em 0 0;
-    }
-    
-}
-
-@media screen and (max-width: 1000px) {
-
-    main #links a {
-        padding: 0.5em 0.1em 0 0;
-    }
-    
-}
-
-@media screen and (max-width: 630px) {
-
-    body::before {
-        width: 100%;
-        height: 100%;
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        width: 50vw;
     }
 }
 
-@media screen and (max-width: 525px) {
-    
-    header {
-        padding: 5px;
+@media screen and (max-width:750px) {
+
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        width: 100vw;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-height: 935px) {
+
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-height: 725px) {
+
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        padding: 0.5em;
     }
 
-    nav {
-        width: 100%;
-    }
-
-    nav a {
-        text-align: center;
-        font-size: large;
-    }
-
-    main {
-        width: 100%;
-        padding: 0;
-    }
-
-    main #content-container {
-        width: 100%;
-        font-size: large;
-    }
-
-    main #about {
-        width: 100%;
-        text-align: center;
-    }
-
-    main #about h2 {
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-
-    main #links {
-        width: 33.33%;
-        display:grid;
-        margin: 0.5em 33.33%;
-    }
-
-    main #links img {
-        width:20px; 
-        height:20px;
-    }
-
-    main #links .icon-description {
-        visibility: visible;;
-    }
-    
-    main #links a {
-        padding: 0.5em 0;
-        font-size: large;
-        margin-top: 1px;
-        width: fit-content;
-        text-align: center;
-    }
-
-    footer #contact h1 {
+    #links a {
         font-size: x-large;
     }
-
-    footer #contact p {
-        font-size: large;
-    }
-    
 }

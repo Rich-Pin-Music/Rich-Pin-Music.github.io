@@ -5,43 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <title>Rich Pin Music - Official Site</title>
+    <style>
+        /* 
+            For Development! 
+        */
+
+        /* body {
+            background-color: pink;
+        }
+        #site-logo {
+            background-color: rgb(162, 202, 237);
+        }
+        #about {
+            background-color: aquamarine;
+        }
+        #links {
+            background-color: white;
+        }
+        #footer {
+            background-color: gainsboro;
+        } */
+
+        /* End - For Development */
+
+        body::before {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(/images/rp-selfie2-filter.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        img {
+             width: 100%;
+             height: 100%;
+        }
+
+        .w3-grid {
+            grid-template-rows: auto;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #site-logo, #about, #links, #footer {
+            align-content: center;
+            width:33.33vw;
+            text-align: center;
+            font-size: large;
+            padding: 2em 2em;
+        }
+
+        #about, #footer {
+            font-weight: bold;
+        }
+
+        #links {
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 2em;
+        }
+
+        #links a {
+            margin: 0 1em;
+            font-size: xx-large;
+            color: #800080;
+        }
+
+        #links a:hover {
+            filter: drop-shadow(2px 4px 6px rgb(250, 133, 229));
+        }
+
+        #links img {
+             width: 1em;
+             height: 1em;
+        }
+
+        #footer h3 {
+            font-weight: bold;
+        }
+
+        #footer i {
+            margin-right: 0.5em;
+            color: #800080;
+        }
+
+        @media screen and (max-width:1500px) {
+             
+            #site-logo, #about, #links, #footer {
+                width:50vw;
+            }
+        }
+
+        @media screen and (max-width:750px) {
+
+            #nav, #site-logo, #about, #links, #footer {
+                width:100vw;
+                padding: 1em;
+            }
+        }
+
+        @media screen and (max-height: 935px) {
+            #nav, #site-logo, #about, #links, #footer {
+                padding: 1em;
+            }
+        }
+
+        @media screen and (max-height: 725px) {
+
+            #nav, #site-logo, #about, #links, #footer {
+                padding: 0.5em;
+            }
+
+            #links a {
+                font-size: x-large;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#contact"><h1>CONTACT ME</h1></a>
-        </nav>
-    </header>
-    <main>
-        <div id="content-container">
-            <div class="content" id="about">
-                <h2>Rich Pin Music</h2>
-                <p>Solo acoustic performer!</p>
-                <p>Session player, guitar and bass!</p>
-                <p>Live sound engineer!</p>
-                <p>Mix engineer!</p>
-            </div>
-            <div class="content" id="links">
-                <a href="https://www.instagram.com/richpinmusic/" target="_blank"><i class="fa fa-instagram"></i><span class="icon-description">Instagram</span></a>
-                <a href="https://www.youtube.com/@richpinmusic" target="_blank"><i class="fa fa-youtube"></i><span class="icon-description">YouTube</span></a>
-                <a href="https://soundcloud.com/richpinmusic" target="_blank"><i class="fa fa-soundcloud"></i><span class="icon-description">SoundCloud</span></a>
-                <a href="https://www.facebook.com/richpinmusic/" target="_blank"><i class="fa fa-facebook-official"></i><span class="icon-description">Facebook</span></a>
-                <a href="https://www.tiktok.com/@richpinmusic" target="_blank"><i><img src="/images/tiktok-icon.png" alt="tiktok"></i><span class="icon-description">TikTok</span></a>
-                <a href="https://richpin.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp"></i><span class="icon-description">Bandcamp</span></a>
-            </div>
+    <div class="w3-grid">
+        <div id="site-logo">
+            <img src="/images/rp-site-logo.png" alt="Rich Pin Music">
         </div>
-    </main>
-    <footer>
-        <div id="contact">
-            <h1>CONTACT</h1>
+        <div id="about">
+            <p>Solo acoustic performer!</p>
+            <p>Session player, guitar & bass!</p>
+            <p>Live sound engineer!</p>
+            <p>Mix engineer!</p>
+        </div>
+        <div id="links">
+            <a href="https://www.instagram.com/richpinmusic/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@richpinmusic" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://soundcloud.com/richpinmusic" target="_blank"><i class="fa fa-soundcloud"></i></a>
+            <a href="https://www.facebook.com/richpinmusic/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.tiktok.com/@richpinmusic" target="_blank"><img src="/images/tiktok-icon.png" alt="tiktok"></a>
+            <a href="https://richpin.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp"></i></a>
+        </div>
+        <div id="footer">
+            <h3>CONTACT</h3>
             <div>
-                <i class="fa fa-envelope"><span>rich.pinegar@gmail.com</span></i>
-                <br><br>
-                <i class="fa fa-map-marker"><span>Boston, MA</span></i>
+                <i class="fa fa-envelope"></i><span>rich.pinegar@gmail.com</span>
+            </div>
+            <div>
+                <i class="fa fa-map-marker"></i><span>Boston, MA</span>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
