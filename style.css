@@ -20,379 +20,109 @@ body::before {
     opacity: 0.7;
 }
 
-body {
-    font-family: "Raleway", Arial, sans-serif;
-    padding: 0 100px;
+img {
+    width: 100%;
+    height: 100%;
 }
 
-header, main {
-    /* background-color: salmon; */
-    padding: 0 80px;
-}
-
-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-nav {
-    /* background-color: wheat; */
-    padding: 0 80px;
-    opacity: 0.9;
-}
-
-nav a {
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #e1e1e1;
-}
-
-main {
-    /* background-color: rgb(250, 143, 131); */
+.w3-grid {
+    grid-template-rows: auto;
+    width: 100vw;
     height: 100vh;
 }
 
-/* Padding to even up padding in acutal image top to bottom */
-main #site-header {
-    /* background-color: rgb(247, 189, 137); */
-    padding: 12px 0 0 0;
+#site-logo,
+#about,
+#links,
+#footer {
+    align-content: center;
+    width: 33.33vw;
+    text-align: center;
+    font-size: large;
+    padding: 2em 2em;
 }
 
-/* Padding to match space in site header image */
-main #about, main #links {
-    padding: 30px 80px;
-}
-
-main #about {
-    /* background-color: rgb(247, 205, 168); */
-    font-size: x-large;
+#about,
+#footer {
     font-weight: bold;
-    color: rgb(63, 60, 60);
-    filter: drop-shadow(2px 4px 6px rgb(251, 80, 220));
 }
 
-/* Margin to line up container with site-header */
-main #links {
-    background-color: rgb(255, 255, 255, 0.5);
-    border-radius: 0.5em;
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 20px;
+#links {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 2em;
 }
 
-main #links a {
-    /* background-color: aliceblue; */
-    padding-right: 30px;
-    font-size: x-large;
-    font-weight: bold;
+#links a {
+    margin: 0 1em;
+    font-size: xx-large;
     color: #800080;
 }
 
-main #links a:nth-child(5) {
-    padding-right: 20px;
-}
-
-main #links a:last-child {
-    padding-right: 0;
-    text-align: right;
-}
-
-main #links a:hover {
+#links a:hover {
     filter: drop-shadow(2px 4px 6px rgb(250, 133, 229));
 }
 
-main #links i, main #links img {
-    /* background-color: rgb(235, 105, 105); */
-    padding-right: 10px;
-}
-
-main #links img {
-    width: 1em; 
+#links img {
+    width: 1em;
     height: 1em;
-    display: inline-block;
-    vertical-align: middle;
-    object-fit: contain;
-    margin-bottom: 6px;
 }
 
-footer {
-    position:absolute;
-    bottom: -1;
-    left: 0;
-    width:100%;
-    height: 100vh;
-    /* text-align: center; */
-    background-color: #ede5e5;
-}
-
-footer .footer-column:first-child {
-    width: 30%;
-    float: left;
-}
-
-footer .footer-column:last-child {
-    width: 30%;
-    float: right;
-}
-
-footer #contact {
-    /* background-color: wheat; */
-    padding-top: 100px;
-    color: rgb(63, 60, 60);
-}
-
-footer #contact .footer-column {
-    /* background-color: aqua; */
-    display: inline-block;
-    width: 33.33%;
-}
-
-footer #contact .footer-column:first-child {
-    float: left;
-}
-
-footer #contact .footer-column:last-child {
-    float: right;
-}
-
-footer #contact h1 {
-    color:#ce869a;
+#footer h3 {
     font-weight: bold;
-    text-align: center;
 }
 
-footer #contact div {
-    padding: 20px 0;
-    font-size: x-large;
-}
-
-footer #contact i {
-    /* background-color: red; */
-    width: 30px;
-    height: 30px;
-    padding: 0 5px;
-}
-
-/* Need individual margin and padding since map icon is not centered */
-footer #contact .fa-map-marker {
-    margin-left: 4px;
-    padding: 0 2px;
-}
-
-footer #contact span {
-    /* background-color: yellow; */
-    padding: 0 10px;
+#footer i {
+    margin-right: 0.5em;
+    color: #800080;
 }
 
 /****************************************************
 
-    Responsive design for different screen sizes
+    Responsive for different screen sizes
 
 ****************************************************/
 
-@media screen and (max-width: 1575px) {
+@media screen and (max-width:1500px) {
 
-    main #links {
-        padding-bottom: 0;
-        width: fit-content;
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        width: 50vw;
     }
-
-    main #links a {
-        display:inline-block;
-        width: 28px;
-        text-decoration: none;
-    }
-
-    main #links img {
-        margin-bottom: 3px;
-    }
-
-    .icon-description {
-        visibility: hidden;
-    }
-    
 }
 
-@media screen and (max-width: 1375px) {
+@media screen and (max-width:750px) {
 
-    body {
-        padding: 0 50px;
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        width: 100vw;
+        padding: 1em;
     }
-    
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-height: 935px) {
 
-    body {
-        padding: 0 20px;
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        padding: 1em;
     }
-    
 }
 
-@media screen and (max-width: 1215px) {
+@media screen and (max-height: 725px) {
 
-    body {
-        padding: 0 10px;
+    #site-logo,
+    #about,
+    #links,
+    #footer {
+        padding: 0.5em;
     }
 
-    header, main {
-        padding: 0 50px;
-    }
-    
-}
-
-@media screen and (max-width: 1100px) {
-
-    nav {
-        padding: 20px 4em 10px 4em;
-    }
-
-    nav a {
-        font-size: large;
-    }
-    
-    main #site-header img {
-        width: 25em;
-    }
-
-    main #about, main #links {
-        font-size: large;
-        padding-left: 3.2em ;
-        padding-right: 3.2em;
-    }
-
-}
-
-@media screen and (max-width: 900px) {
-
-    nav {
-        padding: 20px 3em 10px 3em;
-    }
-
-    nav a {
-        font-size: large;
-    }
-    
-    main #site-header img {
-        width: 20em;
-    }
-
-    main #about, main #links {
-        font-size: large;
-        padding-left: 2.5em ;
-        padding-right: 2.5em;
-    }
-
-}
-
-@media screen and (max-width: 750px) {
-
-    header, main {
-        text-align: center;
-    }
-
-    main #links {
-        width: auto;
-    }
-
-}
-
-@media screen and (max-width: 575px) {
-
-    header, main {
-        text-align: center;
-    }
-
-    main #about {
-        padding: 20px 0 20px 0;
-    }
-
-    main #links {
-        padding: 15px 0 0 0;
-    }
-
-    main #links a {
-        font-size: medium;
-    }
-
-}
-
-@media screen and (max-width: 475px) {
-
-    main #site-header img {
-        width: 15em;
-    }
-
-    main #links {
-        padding-left: 3px;
-        padding-right: 1px;
-    }
-
-}
-
-/* @media screen and (max-width: 525px) {
-    
-    header {
-        padding: 5px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav a {
-        text-align: center;
-        font-size: large;
-    }
-
-    main {
-        width: 100%;
-        padding: 0;
-    }
-
-    main #about {
-        width: 100%;
-        text-align: center;
-    }
-
-    main #about h2 {
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-
-    main #links {
-        width: 33.33%;
-        display:grid;
-        margin: 0.5em 33.33%;
-    }
-
-    main #links img {
-        width:20px; 
-        height:20px;
-    }
-
-    main #links .icon-description {
-        visibility: visible;;
-    }
-    
-    main #links a {
-        padding: 0.5em 0;
-        font-size: large;
-        margin-top: 1px;
-        width: fit-content;
-        text-align: center;
-    }
-
-    footer #contact h1 {
+    #links a {
         font-size: x-large;
     }
-
-    footer #contact p {
-        font-size: large;
-    }
-    
-} */
+}
